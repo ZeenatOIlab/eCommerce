@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "761629639269",
+    "project_id": "foodnjoy-6843f",
+    "storage_bucket": "foodnjoy-6843f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761629639269:android:1a7b42c19713103fed7c8c",
+        "android_client_info": {
+          "package_name": "com.e.e_commerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761629639269-gfl0l3oui3j9l8bp34b9dd103uu5uf5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.e_commerce_app",
+            "certificate_hash": "13c8af10052d87109a95bde77f8e27bfe256e0aa"
+          }
+        },
+        {
+          "client_id": "761629639269-j9kn491c8u4r3tc2f3uhkbrorn50hbjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeBT7NTqIl9yg0oJnJ-AYVRSbrpKYz1S0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761629639269-j9kn491c8u4r3tc2f3uhkbrorn50hbjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

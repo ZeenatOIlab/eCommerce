@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="210dp"
+            android:layout_height="250dp"
+        >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/scrachbackImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:id="@+id/scrachbackText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <in.myinnos.androidscratchcard.ScratchCard
+                android:id="@+id/scratchCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scratchDrawable="@drawable/scrachimg">
+
+            </in.myinnos.androidscratchcard.ScratchCard>
+        </RelativeLayout>
+
+
+</LinearLayout>

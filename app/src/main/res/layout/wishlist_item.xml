@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/wishlist_p_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/myapp_icon"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_vertical"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/wishlist_p_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="test product name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/wishlist_p_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test product price"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/wishlist_p_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test product date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/delete_btn_wl"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/delete"
+            android:padding="6dp"
+            android:layout_gravity="end"
+            />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="5dp" >-->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Add to Cart"-->
+<!--            android:minHeight="0dp"-->
+<!--            android:paddingLeft="15dp"-->
+<!--            android:paddingRight="15dp"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:background="@drawable/my_shape"-->
+<!--            android:backgroundTint="@color/lightblue"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:visibility="gone"-->
+<!--            />-->
+<!--          -->
+<!--        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

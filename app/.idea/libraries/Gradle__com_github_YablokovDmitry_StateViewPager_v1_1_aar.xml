@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.YablokovDmitry:StateViewPager:v1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a631c4734f79aac4204f48fc65d7595/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a631c4734f79aac4204f48fc65d7595/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.YablokovDmitry/StateViewPager/v1.1/a5137e741414f21c4c33d37056f82f2764ed037/StateViewPager-v1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

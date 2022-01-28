@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/orerImage"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/one"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/orerImage"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/orderproname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcs efgh ijkl mnop"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/orderprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$12342"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

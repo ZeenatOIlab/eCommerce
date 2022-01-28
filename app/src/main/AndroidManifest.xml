@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.e.e_commerce_app">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/myapp_icon_foreground"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/myapp_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activitys.Offer_Activity"
+            android:label="Offers"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activitys.TrackingActivity" />
+        <activity android:name=".Activitys.TempActivity" />
+        <activity
+            android:name=".Activitys.VerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.YourProfileActivity"
+            android:label="Your Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.CancelOrderActivity"
+            android:label="Cancel Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ForgetPasswordActivity"
+            android:label="Password Recovery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.HelpActivity"
+            android:label="Help Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.WishList_Activity"
+            android:label="Wish List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.OrderProcessActivity"
+            android:label="Order Process"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ProductsActivity"
+            android:label="Product"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.RewardActivity"
+            android:label="Your Reward"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.NotificationActivity"
+            android:label="Notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ViewOrderDetail"
+            android:label="Order Summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.EditProfileActivity"
+            android:label="Edit Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MyCartActivity"
+            android:label="My Cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.ProfileActivity"
+            android:label="Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MyOrdersActivity"
+            android:label="My Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activitys.Item_Description_Activity"
+            android:label="Product Description"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activitys.DashboardActivity"
+            android:label="Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.CategoriesActivity"
+            android:label="Categories"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Add your API key here -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_wzwtTkFHQpxg2R" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

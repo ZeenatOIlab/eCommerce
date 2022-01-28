@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/multiadrstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Adress"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btndeleteadrs"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/minus"
+
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adress">
+
+        <EditText
+            android:id="@+id/useradres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content">
+    <TextView
+        android:id="@+id/usercountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="select country"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:textSize="16sp"
+        android:background="@android:drawable/editbox_background"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/userstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="select state"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:background="@android:drawable/editbox_background"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/usercity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="select city"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:background="@android:drawable/editbox_background"
+            />
+    </RelativeLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <EditText
+            android:id="@+id/userpincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pincode"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

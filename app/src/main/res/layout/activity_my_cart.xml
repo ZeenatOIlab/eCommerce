@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.MyCartActivity"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:id="@+id/cartlist"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_weight="0.80">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Cart"
+                    android:textColor="@color/lightblue"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="25sp"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cartRecycleList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/cartanmmt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_screen1"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:id="@+id/sublayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total : "
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+
+                />
+            <TextView
+                android:id="@+id/cartsubtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/checklayout"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/lightblue"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/cart_checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Out"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/carterror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@drawable/clouds"
+            />
+
+        <TextView
+            android:id="@+id/cart_err_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart list is Empty"
+            android:textSize="20sp"
+            android:textColor="@color/lightblue"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

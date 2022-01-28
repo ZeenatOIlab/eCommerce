@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/user_icon"
+        android:title="user_icon"
+        app:showAsAction="always"
+        android:icon="@drawable/usericon"
+        android:iconTint="@color/white"
+        />
+
+
+    <item android:id="@+id/noti_icon"
+        android:icon="@drawable/notificatio_icon"
+        android:title="notification"
+        app:showAsAction="always"
+        />
+<!--    <item android:id="@+id/cart_icon"-->
+<!--        android:title="carticon"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/cart_icon"-->
+<!--        android:iconTint="@color/white"-->
+<!--        />-->
+    <item
+        android:id="@+id/cart_icon"
+        android:actionLayout="@layout/cart_count_layout"
+        android:icon="@drawable/cart_icon"
+        android:iconTint="@color/white"
+        app:showAsAction="always"
+        android:title="carticon">
+    </item>
+
+
+
+
+</menu>

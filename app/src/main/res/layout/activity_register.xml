@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.RegisterActivity"
+    android:background="@color/lightblue"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp"
+
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/lightblue"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/lightblue"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="@color/lightblue"
+                android:backgroundTint="@color/lightblue"
+                android:imeOptions="actionNext"
+
+
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_register_monilenmbr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/lightblue"
+                    android:hint="Mobile Number"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:textColorHint="@color/lightblue"
+                    android:backgroundTint="@color/lightblue"
+                    android:imeOptions="actionNext"
+
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/lightblue"
+                android:hint="Email Adress"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:textColorHint="@color/lightblue"
+                android:backgroundTint="@color/lightblue"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/lightblue">
+
+            <EditText
+                android:id="@+id/et_register_pswrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:drawableTint="@color/lightblue"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:backgroundTint="@color/lightblue"
+                android:textColorHint="@color/lightblue"
+                android:imeOptions="actionNext"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+
+                app:passwordToggleTint="@color/lightblue">
+            <EditText
+                android:id="@+id/et_register_cnfrm_pswrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:drawableTint="@color/lightblue"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:backgroundTint="@color/lightblue"
+                android:textColorHint="@color/lightblue"
+                android:imeOptions="actionDone"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/rgisterbtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_shape"
+                android:backgroundTint="@color/lightblue"
+                android:text="Register"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/backlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Have a acoount? Back to login"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

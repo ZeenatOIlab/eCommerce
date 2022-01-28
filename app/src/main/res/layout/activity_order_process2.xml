@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.OrderProcessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/cartlist_shape"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Detail"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/arroimg2"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="8dp"
+                            android:src="@drawable/downarrow" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/exitAddLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:id="@+id/et_ExitsName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:padding="2dp"
+                                    android:text="User Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/et_ExitsMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:padding="2dp"
+                                    android:text="User mobile"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/oldaddtext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/lightblue"
+                                    android:padding="5dp"
+                                    android:text="I want to use a existing adress"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <androidx.core.widget.NestedScrollView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:context=".ActivityName">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/existsadresslistview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:nestedScrollingEnabled="false" />
+
+                                </androidx.core.widget.NestedScrollView>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <RadioButton
+                            android:id="@+id/radionewadress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/lightblue"
+                            android:text="I want to use a new adress" />
+
+                        <LinearLayout
+                            android:id="@+id/newaddlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/et_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:hint="Full Name"
+                                android:inputType="text"
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/et_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:hint="Email"
+                                android:inputType="text"
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/et_mo_nmbr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:hint="Mobile Number"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/et_pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:hint="PIN code"
+                                android:inputType="number"
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/et_adres"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:hint="Adress "
+                                android:inputType="text|textMultiLine"
+                                android:padding="5dp" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:id="@+id/et_cntry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableEnd="@drawable/ic_arrow"
+                                    android:gravity="center_vertical"
+                                    android:hint="select country"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:id="@+id/et_state"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableEnd="@drawable/ic_arrow"
+                                    android:gravity="center_vertical"
+                                    android:hint="select state"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/cartlist_shape"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:id="@+id/et_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableEnd="@drawable/ic_arrow"
+                                    android:gravity="center_vertical"
+                                    android:hint="select city"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/save_new_adrs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="save adress"
+                                android:background="@drawable/search_shape"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="5dp"
+                                android:backgroundTint="@color/lightblue"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/newadrscontinue2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/lightblue"
+                            android:text="Continue"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/cartlist_shape"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Method"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/arrowimg3"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="8dp"
+                            android:src="@drawable/downarrow" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandlayout_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Please select the prefred payment method to use on this order" />
+
+                            <RadioButton
+                                android:id="@+id/radio_cod"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:buttonTint="@color/lightblue"
+                                android:text="Cash on Delivery"
+                                android:textSize="5pt" />
+
+                            <RadioButton
+                                android:id="@+id/radio_op"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:buttonTint="@color/lightblue"
+                                android:text="Online Payment" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/search_shape"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_code_expand"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:drawableLeft="@drawable/spinner_img"
+                                    android:drawablePadding="5dp"
+                                    android:padding="5dp"
+                                    android:text="Add Gift Card or Promo Code"
+                                    android:textColor="@color/lightblue"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                                    android:id="@+id/code_expanded_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:padding="10dp"
+                                    app:ael_duration="500"
+                                    app:ael_expanded="true"
+                                    app:ael_interpolator="accelerate"
+                                    app:ael_orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/code_l"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="10">
+
+                                        <EditText
+                                            android:id="@+id/et_promo_code"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="7"
+                                            android:background="@drawable/search_shape"
+                                            android:hint="enter code"
+                                            android:inputType="text"
+                                            android:padding="5dp" />
+
+                                        <Button
+                                            android:id="@+id/btn_apply_code"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_weight="3"
+                                            android:background="@drawable/search_shape"
+                                            android:backgroundTint="@color/lightblue"
+                                            android:text="Apply"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+
+                                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/tv_see_all_offer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:padding="5dp"
+                                    android:text="See All Offer's"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <Button
+                                android:id="@+id/paymentcontinue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@color/lightblue"
+                                android:text="Continue"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/cartlist_shape"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Confirm Order"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/arrowimg4"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="8dp"
+                            android:src="@drawable/downarrow" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandablefour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <com.e.e_commerce_app.Utility.NonScrollableListView
+                                android:id="@+id/checkoutRecycle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="@null" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Discount-Total"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_co_dscTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="र3000"
+                                    android:textColor="@color/black" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Shpping Charge-Total"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_co_shpngTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="र3000"
+                                    android:textColor="@color/black" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@id/tv_co_Total"
+                                    android:text="Total: "
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_co_Total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="र3000"
+                                    android:textColor="@color/black" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:id="@+id/cnfrmorderContineu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@color/lightblue"
+                                android:text="Confirm Order"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
